@@ -1,0 +1,32 @@
+@mixin applyShadow() {
+  -webkit-box-shadow: 4px -2px 18px -3px rgba(16, 39, 56, 0.39);
+  -moz-box-shadow: 4px -2px 18px -3px rgba(16, 39, 56, 0.39);
+  box-shadow: 4px -2px 18px -3px rgba(16, 39, 56, 0.39);
+}
+
+@mixin animate($property: all, $duration: 0.3s, $effect: ease-in-out, $delay: 0s) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $effect;
+  transition-delay: $delay;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  :-moz-placeholder {
+    @content;
+  }
+  ::-moz-placeholder {
+    @content;
+  }
+  :-ms-input-placeholder {
+    @content;
+  }
+}

@@ -1,0 +1,17 @@
+@import './reset';
+@import './variables';
+
+html {
+  @media (max-width: $lgDesktopWidth) {
+    font-size: 16px;
+  }
+  @media (max-width: $smDesktopWidth) {
+    font-size: 14px;
+  }
+  @media (max-width: $phoneWidth) {
+    font-size: 12px;
+  }
+  @media (max-width: $smPhoneWidth) {
+    font-size: 10px;
+  }
+}
